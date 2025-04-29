@@ -1,4 +1,4 @@
-const Wishlist = require("../../models/Wishlist");
+const Wishlist = require("../../models/wishlist");
 const Product = require("../../models/Product");
 
 // Get a user's wishlist
