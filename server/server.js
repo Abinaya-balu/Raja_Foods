@@ -49,7 +49,7 @@ function checkNetworkConnectivity() {
         console.error('⚠️ Failed to connect to Gmail SMTP server on port 465:', err.message);
       });
       
-      socketSSL.setTimeout(5000, () => {
+      socketSSL.setTimeout(4000, () => {
         console.error('⚠️ Connection timeout while connecting to Gmail SMTP server on port 465');
         socketSSL.destroy();
       });
@@ -67,7 +67,7 @@ function checkNetworkConnectivity() {
         console.error('⚠️ Failed to connect to Gmail SMTP server on port 587:', err.message);
       });
       
-      socketTLS.setTimeout(5000, () => {
+      socketTLS.setTimeout(4000, () => {
         console.error('⚠️ Connection timeout while connecting to Gmail SMTP server on port 587');
         socketTLS.destroy();
       });
@@ -118,7 +118,7 @@ mongoose
 checkNetworkConnectivity();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000 ;
 
 app.use(
   cors({
