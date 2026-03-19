@@ -9,6 +9,7 @@ Raja Oils is a full-stack MERN-style application for selling products (oil, seed
 - Payment integrations (PayPal + Razorpay)
 - Email workflows (verification, booking, and notifications)
 
+demo with mock data: https://foodproducts-ecom.onrender.com
 ---
 
 ## Tech Stack
